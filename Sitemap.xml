@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://portfolioshit.netlify.app/</loc>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kanglimchu.netlify.app/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kanglimchu.netlify.app/images/kianna-profile.jpg</image:loc>
+      <image:title>Kianna Ivan Marie Lim - Information Technology Student and Web Developer</image:title>
+      <image:caption>Profile photo of Kianna Ivan Marie Lim</image:caption>
+    </image:image>
+  </url>
 </urlset>
