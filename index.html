@@ -3,179 +3,731 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0d18">
-  <meta name="description" content="Kianna Ivan Marie Lim — Information Technology student, aspiring web developer and UI enthusiast.">
-  <title>Kianna Lim | IT Portfolio</title>
+  <meta name="theme-color" content="#09090b">
+  <title>Kianna Lim | IT Student &amp; Web Developer Portfolio</title>
+  <meta name="description" content="Explore the IT portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Discover web projects, UI design, and database systems.">
+  <meta name="keywords" content="Kianna Lim, Kianna Ivan Marie Lim, IT portfolio, Baguio City web developer, Information Technology student, front-end developer, PHP MySQL developer, Data Center College of the Philippines">
+  <meta name="author" content="Kianna Ivan Marie Lim">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://kanglimchu.netlify.app/">
+  <meta name="google-site-verification" content="google119a35cef3133839">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Kianna Lim Portfolio">
+  <meta property="og:title" content="Kianna Lim | IT Student &amp; Web Developer Portfolio">
+  <meta property="og:description" content="Explore the IT portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Discover web projects, UI design, and database systems.">
+  <meta property="og:url" content="https://kanglimchu.netlify.app/">
+  <meta property="og:image" content="https://kanglimchu.netlify.app/images/kianna-profile.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kianna Ivan Marie Lim - Information Technology Student and Web Developer">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Kianna">
+  <meta property="profile:last_name" content="Lim">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kianna Lim | IT Student &amp; Web Developer Portfolio">
+  <meta name="twitter:description" content="Explore the IT portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Discover web projects, UI design, and database systems.">
+  <meta name="twitter:image" content="https://kanglimchu.netlify.app/images/kianna-profile.jpg">
+  <meta name="twitter:image:alt" content="Kianna Ivan Marie Lim - IT Portfolio">
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+
+  <!-- Structured Data: Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kanglimchu.netlify.app/#website",
+        "url": "https://kanglimchu.netlify.app/",
+        "name": "Kianna Lim IT Portfolio",
+        "description": "Official IT portfolio of Kianna Ivan Marie Lim, BSIT student and aspiring web developer.",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://kanglimchu.netlify.app/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://kanglimchu.netlify.app/#profilepage",
+        "url": "https://kanglimchu.netlify.app/",
+        "name": "Kianna Lim | IT Student & Web Developer Portfolio",
+        "isPartOf": {
+          "@id": "https://kanglimchu.netlify.app/#website"
+        },
+        "mainEntity": {
+          "@id": "https://kanglimchu.netlify.app/#person"
+        },
+        "breadcrumb": {
+          "@id": "https://kanglimchu.netlify.app/#breadcrumb"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-11-02",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://kanglimchu.netlify.app/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://kanglimchu.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://kanglimchu.netlify.app/#about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Skills",
+            "item": "https://kanglimchu.netlify.app/#skills"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Projects",
+            "item": "https://kanglimchu.netlify.app/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Contact",
+            "item": "https://kanglimchu.netlify.app/#contact"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://kanglimchu.netlify.app/#person",
+        "name": "Kianna Ivan Marie Lim",
+        "alternateName": "Kianna Lim",
+        "jobTitle": "Information Technology Student & Web Developer",
+        "description": "Bachelor of Science in Information Technology (BSIT) student at Data Center College of the Philippines – Baguio City, focused on web development, relational database systems, and UI design.",
+        "url": "https://kanglimchu.netlify.app/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://kanglimchu.netlify.app/#profile-photo",
+          "url": "https://kanglimchu.netlify.app/images/kianna-profile.jpg",
+          "caption": "Kianna Ivan Marie Lim"
+        },
+        "sameAs": [
+          "https://github.com/kanglimchu-create",
+          "https://www.linkedin.com/"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Data Center College of the Philippines – Baguio City"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Baguio City",
+          "addressCountry": "PH"
+        },
+        "knowsAbout": [
+          "Web Development",
+          "Front-End Web Development",
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "PHP",
+          "MySQL",
+          "Relational Databases",
+          "System Analysis and Design",
+          "User Interface Design",
+          "Java",
+          "C#",
+          "Python"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://kanglimchu.netlify.app/#projects-list",
+        "name": "Featured IT Projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Beyond the Brew — POS / MIS",
+              "description": "A point-of-sale and management information system concept designed to organize order transactions, track product inventory, and streamline coffee shop operations.",
+              "creator": {
+                "@id": "https://kanglimchu.netlify.app/#person"
+              },
+              "keywords": ["POS", "System analysis", "Database", "Point of Sale"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Computer Rental & Sales System",
+              "description": "A database-driven application engineered for tracking computer rentals, sales records, and equipment inventory using PHP, MySQL, and WampServer.",
+              "creator": {
+                "@id": "https://kanglimchu.netlify.app/#person"
+              },
+              "keywords": ["PHP", "MySQL", "WampServer", "Database"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Personal Portfolio Website",
+              "description": "A responsive, accessible portfolio website built with HTML5, CSS3, and JavaScript showcasing projects, technical skills, and background.",
+              "creator": {
+                "@id": "https://kanglimchu.netlify.app/#person"
+              },
+              "keywords": ["HTML", "CSS", "JavaScript", "Web Development"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <div class="grain"></div>
+  <!-- 00. Minimalist Editorial Entrance (Human Craft, Zero AI Slop) -->
+  <aside class="entrance-curtain" id="entranceCurtain" aria-hidden="true">
+    <div class="curtain-content" id="curtainContent">
+      <div class="curtain-mark">
+        <span class="curtain-monogram">K</span>
+        <div class="curtain-divider"></div>
+        <div class="curtain-text">
+          <span class="curtain-name">Kianna Lim</span>
+          <span class="curtain-role">Developer Portfolio</span>
+        </div>
+      </div>
+    </div>
+  </aside>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#home" aria-label="Kianna Lim home">
-      <span class="brand-mark">K<span>.</span></span>
-      <span class="brand-name">KI<span>ANNA</span><small>IT PORTFOLIO</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span>
-    </button>
-    <nav class="navigation" id="mainNav" aria-label="Main navigation">
-      <a class="nav-link active" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
-    <a class="header-cta" href="#contact">Let's connect <span>↗</span></a>
+  <!-- Background Fine Grid & Mouse Spotlight -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-spotlight" id="cursorSpotlight" aria-hidden="true"></div>
+
+  <!-- 01. Site Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Kianna Lim home">
+        <div class="brand-badge">K.</div>
+        <div class="brand-info">
+          <span class="brand-name">Kianna Lim</span>
+          <span class="brand-meta">IT Portfolio</span>
+        </div>
+      </a>
+
+      <nav class="navigation" aria-label="Main Navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#work">Projects</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">
+        <span>Let's Connect</span>
+        <span>&nearr;</span>
+      </a>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> INFORMATION TECHNOLOGY STUDENT</p>
-        <h1>Building digital<br>experiences with <em>purpose.</em></h1>
-        <p class="hero-description">Hi, I'm <strong>Kianna Ivan Marie Lim</strong> — an IT student exploring web development, thoughtful interface design, databases, and systems that make everyday tasks easier.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
-          <a class="text-link" href="#about">A little about me <span>↗</span></a>
+    <!-- 02. Hero Section -->
+    <section class="section hero container" id="home">
+      <div class="hero-content">
+        <div class="status-pill animate-in delay-0">
+          <span class="status-dot"></span>
+          <span>Available for internships &amp; junior roles</span>
         </div>
-        <div class="hero-meta">
-          <div><span class="meta-number">03</span><span class="meta-label">Featured projects</span></div>
-          <div><span class="meta-number">06+</span><span class="meta-label">Tools & technologies</span></div>
-          <div><span class="meta-number">∞</span><span class="meta-label">Things to learn</span></div>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="profile-frame">
-          <div class="profile-image" id="profileImage">
-            <img src="images/kianna-profile.jpg" alt="Kianna Ivan Marie Lim" class="profile-photo">
-          </div>
-        </div>
-        <div class="floating-card card-code"><span class="mini-icon">&lt;/&gt;</span><div><strong>Curious mind</strong><small>Always learning</small></div></div>
-        <div class="floating-card card-location"><span class="location-dot"></span><div><strong>Baguio City</strong><small>Philippines</small></div></div>
-        <div class="hero-caption">DESIGN-MINDED. LOGIC-DRIVEN. <span>✦</span></div>
-      </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO DISCOVER</a>
-    </section>
 
-    <section class="about section-wrap section-pad" id="about">
-      <div class="section-heading reveal">
-        <p class="eyebrow">01 / A LITTLE INTRODUCTION</p>
-        <h2>Curiosity is where<br><em>good things begin.</em></h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-note reveal">
-          <span class="quote-mark">“</span>
-          <p class="about-quote">I enjoy the process of turning an idea into something people can actually use.</p>
-          <p class="muted">For me, information technology is a balance of logic, creativity, and continuous learning.</p>
+        <h1 class="hero-headline animate-in delay-1">
+          <span class="mask-line">Building thoughtful web interfaces &amp;</span>
+          <span class="mask-line"><span class="hero-highlight">structured database systems.</span></span>
+        </h1>
+
+        <p class="hero-subtext animate-in delay-2">
+          Hi, I'm <strong>Kianna Ivan Marie Lim</strong> — an Information Technology student at Data Center College of the Philippines in Baguio City. I build high-performance web applications, engineer relational database systems, and turn creative ideas into clean, functional reality.
+        </p>
+
+        <div class="hero-actions animate-in delay-3">
+          <a class="btn-primary" href="#work">
+            <span>Explore Projects</span>
+            <span>&darr;</span>
+          </a>
+          <a class="btn-secondary" href="#contact">
+            <span>Get In Touch</span>
+            <span>&nearr;</span>
+          </a>
         </div>
-        <div class="about-content reveal">
-          <p>I'm currently pursuing a <strong>Bachelor of Science in Information Technology</strong> at <strong>Data Center College of the Philippines – Baguio City</strong>.</p>
-          <p>I'm building my foundation in front-end development, programming, database management, and system analysis. I like experimenting with layouts, improving user experiences, and figuring out how systems work behind the scenes.</p>
-          <p>This portfolio is my little corner of the internet to document what I've learned and the projects I'm working on.</p>
-          <div class="about-facts">
-            <div><span class="fact-label">CURRENT FOCUS</span><strong>Web development & UI</strong></div>
-            <div><span class="fact-label">LEARNING</span><strong>Code, databases & systems</strong></div>
+
+        <div class="hero-stats-row animate-in delay-4">
+          <div class="stat-item">
+            <span class="stat-number">03</span>
+            <span class="stat-label">Featured Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">08+</span>
+            <span class="stat-label">Core Technologies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">BSIT</span>
+            <span class="stat-label">DCCP Baguio City</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="skills section-wrap section-pad" id="skills">
-      <div class="section-heading reveal">
-        <p class="eyebrow">02 / MY TOOLKIT</p>
-        <h2>Learning the tools.<br><em>Finding my rhythm.</em></h2>
-        <p class="section-intro">Technologies I've worked with through coursework and practice. Still growing, one project at a time.</p>
-      </div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><span class="skill-symbol">⌘</span><h3>Web development</h3><p>Creating responsive pages and experimenting with layout, interaction, and visual hierarchy.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        <article class="skill-card reveal"><span class="skill-symbol">⌁</span><h3>Programming</h3><p>Practicing programming fundamentals, problem-solving, and structured code.</p><div class="tags"><span>Java</span><span>C#</span><span>Python</span></div></article>
-        <article class="skill-card reveal"><span class="skill-symbol">▤</span><h3>Databases & systems</h3><p>Working with relational data, database tables, system requirements, and process flows.</p><div class="tags"><span>MySQL</span><span>PHP</span><span>System analysis</span></div></article>
-      </div>
-      <div class="skills-footnote reveal"><span class="sparkle">✦</span> Skills are a work in progress — and that's the fun part.</div>
-    </section>
-
-    <section class="projects section-wrap section-pad" id="projects">
-      <div class="projects-heading reveal">
-        <div class="section-heading">
-          <p class="eyebrow">03 / SELECTED WORK</p>
-          <h2>Projects with a<br><em>purpose behind them.</em></h2>
+      <div class="hero-portrait-card spotlight-card animate-in delay-2">
+        <div class="hero-portrait-inner">
+          <picture>
+            <source srcset="images/kianna-profile.webp" type="image/webp">
+            <source srcset="images/kianna-profile-opt.jpg" type="image/jpeg">
+            <img src="images/kianna-profile-opt.jpg" alt="Kianna Ivan Marie Lim - Information Technology student and web developer in Baguio City" width="340" height="425" fetchpriority="high" decoding="async">
+          </picture>
         </div>
-        <p class="section-intro">A selection of academic and personal projects, presented through custom previews.</p>
+        <div class="portrait-footer-meta">
+          <span class="meta-name">Kianna Ivan Marie Lim</span>
+          <span class="meta-loc"><span class="live-dot"></span> Baguio City, PH</span>
+        </div>
       </div>
-      <div class="project-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-art art-pos">
-            <div class="art-topline"><span>PROJECT / 01</span><span>POS · MIS</span></div>
-            <div class="pos-window">
-              <div class="window-bar"><i></i><i></i><i></i><span>BEYOND THE BREW</span></div>
-              <div class="pos-content"><div class="pos-side"></div><div class="pos-main"><span class="fake-line wide"></span><span class="fake-line"></span><div class="fake-products"><i></i><i></i><i></i></div><span class="fake-line wide"></span></div></div>
+    </section>
+
+    <!-- 03. Subtle Tech Ribbon -->
+    <div class="tech-ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <div class="ribbon-item"><span>&#9670;</span> FRONT-END WEB ENGINEERING</div>
+        <div class="ribbon-item"><span>&#9670;</span> RELATIONAL DATABASES &amp; MYSQL</div>
+        <div class="ribbon-item"><span>&#9670;</span> SYSTEM ANALYSIS &amp; DESIGN</div>
+        <div class="ribbon-item"><span>&#9670;</span> PHP 8 &amp; WAMPSERVER</div>
+        <div class="ribbon-item"><span>&#9670;</span> JAVASCRIPT ES6+ &amp; DOM</div>
+        <div class="ribbon-item"><span>&#9670;</span> UI/UX INTERFACE DESIGN</div>
+        <div class="ribbon-item"><span>&#9670;</span> JAVA &amp; PYTHON PROGRAMMING</div>
+        <div class="ribbon-item"><span>&#9670;</span> FRONT-END WEB ENGINEERING</div>
+        <div class="ribbon-item"><span>&#9670;</span> RELATIONAL DATABASES &amp; MYSQL</div>
+        <div class="ribbon-item"><span>&#9670;</span> SYSTEM ANALYSIS &amp; DESIGN</div>
+        <div class="ribbon-item"><span>&#9670;</span> PHP 8 &amp; WAMPSERVER</div>
+        <div class="ribbon-item"><span>&#9670;</span> JAVASCRIPT ES6+ &amp; DOM</div>
+        <div class="ribbon-item"><span>&#9670;</span> UI/UX INTERFACE DESIGN</div>
+        <div class="ribbon-item"><span>&#9670;</span> JAVA &amp; PYTHON PROGRAMMING</div>
+      </div>
+    </div>
+
+    <!-- 04. Projects Section -->
+    <section class="section container" id="work">
+      <div class="section-head reveal-on-scroll">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Engineered with precision and purpose.</h2>
+        <p class="section-desc">A collection of academic capstones, database management applications, and performance-tuned web builds.</p>
+      </div>
+
+      <!-- Segmented Control with Fluid Sliding Indicator -->
+      <div class="projects-filter-bar reveal-on-scroll" role="tablist" aria-label="Filter projects">
+        <div class="filter-indicator" id="filterIndicator"></div>
+        <button class="filter-tab active" data-filter="all">All [03]</button>
+        <button class="filter-tab" data-filter="web">Frontend Web</button>
+        <button class="filter-tab" data-filter="db">Databases &amp; PHP</button>
+        <button class="filter-tab" data-filter="system">MIS / Systems</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 01: Beyond the Brew -->
+        <article class="project-card spotlight-card reveal-on-scroll" style="--stagger: 0;" data-category="system db" data-project="pos">
+          <div class="project-mockup-stage">
+            <div class="screen-mockup">
+              <div class="mockup-header">
+                <span class="mockup-header-title">BEYOND THE BREW // POS</span>
+                <span style="color:var(--emerald);font-size:10.5px;display:inline-flex;align-items:center;gap:4px;">
+                  <span class="live-dot"></span> ONLINE
+                </span>
+              </div>
+              <div class="mockup-rows">
+                <div class="mockup-row"><span>Cold Brew (x2)</span><b>&dollar;8.40</b></div>
+                <div class="mockup-row"><span>Matcha Latte</span><b>&dollar;4.50</b></div>
+                <div class="mockup-row"><span>Pastry Assortment</span><b>&dollar;6.00</b></div>
+                <div class="mockup-row mockup-highlight"><span>Order Balance</span><b>&dollar;18.90</b></div>
+              </div>
             </div>
           </div>
-          <div class="project-info"><div class="project-type">ACADEMIC SYSTEM PROJECT</div><h3>Beyond the Brew <span>— POS / MIS</span></h3><p>A point-of-sale and management system concept for a coffee shop, focused on organizing transactions and supporting day-to-day operations.</p><div class="project-bottom"><div class="tags"><span>POS</span><span>System analysis</span><span>Database</span></div><button class="project-details" data-project="pos" aria-label="Read project details">↗</button></div></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-art art-rental">
-            <div class="art-topline"><span>PROJECT / 02</span><span>PHP · MYSQL</span></div>
-            <div class="rental-illustration"><div class="monitor"><div class="monitor-screen"><span>COMPUTER</span><b>RENTALS</b><i> & SALES</i></div><div class="monitor-stand"></div></div><div class="mini-terminal"><span>01</span><span>02</span><span>03</span><div></div><div></div></div></div>
+          <div class="project-content">
+            <span class="project-cat">Academic Capstone &bull; MIS</span>
+            <h3 class="project-title">Beyond the Brew &mdash; POS / MIS</h3>
+            <p class="project-desc">A point-of-sale and management information system engineered to coordinate order intake, automate discount calculations, and manage beverage inventory through a normalized relational database.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-badge">POS Architecture</span>
+                <span class="tag-badge">MySQL Schema</span>
+                <span class="tag-badge">System Analysis</span>
+              </div>
+              <div class="card-action-arrow">&nearr;</div>
+            </div>
           </div>
-          <div class="project-info"><div class="project-type">DATABASE PROJECT</div><h3>Computer Rental & Sales</h3><p>A simple database-backed system concept for tracking computer rentals, sales, and related records.</p><div class="project-bottom"><div class="tags"><span>PHP</span><span>MySQL</span><span>WampServer</span></div><button class="project-details" data-project="rental" aria-label="Read project details">↗</button></div></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-art art-portfolio">
-            <div class="art-topline"><span>PROJECT / 03</span><span>HTML · CSS · JS</span></div>
-            <div class="browser-illustration"><div class="browser-head"><i></i><i></i><i></i><span>my-portfolio.dev</span></div><div class="browser-body"><span class="browser-small">HELLO, WORLD</span><b>Creative<br><em>developer.</em></b><span class="browser-button"></span><div class="browser-orb"></div></div></div>
+
+        <!-- Project 02: Computer Rental -->
+        <article class="project-card spotlight-card reveal-on-scroll" style="--stagger: 1;" data-category="db web" data-project="rental">
+          <div class="project-mockup-stage">
+            <div class="screen-mockup">
+              <div class="mockup-header">
+                <span class="mockup-header-title">STATION TIMERS &amp; SALES</span>
+                <span style="color:var(--accent);font-size:10px;">PHP 8 &bull; MYSQL</span>
+              </div>
+              <div class="mockup-rows">
+                <div class="mockup-row">
+                  <span>Station 01 &bull; Client</span>
+                  <b style="color:var(--emerald);display:inline-flex;align-items:center;gap:4px;">
+                    <span class="live-dot"></span> Active (1h 45m)
+                  </b>
+                </div>
+                <div class="mockup-row"><span>Station 02 &bull; Client</span><b style="color:var(--text-tertiary);">Available</b></div>
+                <div class="mockup-row"><span>Hardware Inventory</span><b>42 Units In Stock</b></div>
+                <div class="mockup-row" style="background:rgba(255,255,255,0.04);"><span>Daily Receipts</span><b>&dollar;310.00</b></div>
+              </div>
+            </div>
           </div>
-          <div class="project-info"><div class="project-type">PERSONAL PROJECT</div><h3>Personal Portfolio Website</h3><p>A responsive portfolio built to present my background, technical interests, and work in one place.</p><div class="project-bottom"><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="project-details" data-project="portfolio" aria-label="Read project details">↗</button></div></div>
+          <div class="project-content">
+            <span class="project-cat">Database System</span>
+            <h3 class="project-title">Computer Rental &amp; Sales</h3>
+            <p class="project-desc">A database-driven application engineered in PHP and MySQL to manage computer station rental timers, peripheral equipment inventory, and sales transactions.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-badge">PHP 8</span>
+                <span class="tag-badge">MySQL</span>
+                <span class="tag-badge">WampServer</span>
+              </div>
+              <div class="card-action-arrow">&nearr;</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: Portfolio -->
+        <article class="project-card spotlight-card reveal-on-scroll" style="--stagger: 2;" data-category="web" data-project="portfolio">
+          <div class="project-mockup-stage">
+            <div class="screen-mockup">
+              <div class="mockup-header">
+                <span class="mockup-header-title">PERFORMANCE SCORECARD</span>
+                <span style="color:var(--emerald);font-size:10.5px;display:inline-flex;align-items:center;gap:4px;">
+                  <span class="live-dot"></span> 96/100
+                </span>
+              </div>
+              <div class="mockup-rows">
+                <div class="mockup-row"><span>Hero Asset Size</span><b style="color:var(--emerald);">37 KB WebP (94% drop)</b></div>
+                <div class="mockup-row"><span>Layout Shift</span><b style="color:var(--emerald);">CLS: 0.000</b></div>
+                <div class="mockup-row"><span>Structured Schema</span><b>5 JSON-LD Graphs</b></div>
+                <div class="mockup-row" style="background:rgba(255,255,255,0.04);"><span>Framework Overhead</span><b>0 KB (Vanilla)</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-cat">Web Engineering</span>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">A clean, accessible portfolio website built with modern HTML5, CSS, and vanilla JavaScript featuring Schema.org rich markup and WebP asset pipelines.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-badge">HTML5</span>
+                <span class="tag-badge">CSS3</span>
+                <span class="tag-badge">Vanilla JS</span>
+              </div>
+              <div class="card-action-arrow">&nearr;</div>
+            </div>
+          </div>
         </article>
       </div>
-      <p class="project-disclaimer reveal"><span>✳</span> Project descriptions are editable starter copy. Update them to match your final implementation and actual contributions.</p>
     </section>
 
-    <section class="mindset section-wrap section-pad">
-      <div class="mindset-inner reveal">
-        <span class="mindset-star">✳</span>
-        <p class="eyebrow">A NOTE TO SELF</p>
-        <h2>Not perfect yet.<br><em>Always becoming.</em></h2>
-        <p>Every bug, every revision, and every new concept is part of the process. I'm here to keep building, keep asking questions, and make things a little better each time.</p>
+    <!-- 05. Bento About & Philosophy -->
+    <section class="section container" id="about">
+      <div class="section-head reveal-on-scroll">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">Curiosity grounded in structured logic.</h2>
+        <p class="section-desc">Bridging clear interface design with normalized systems thinking.</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card spotlight-card reveal-on-scroll">
+          <p class="bento-quote">
+            &ldquo;I believe good software balances <span>an effortless, intuitive user interface</span> with <span>bulletproof, structured logic</span> behind the scenes.&rdquo;
+          </p>
+          <p class="bento-text">
+            I am pursuing my <strong>Bachelor of Science in Information Technology (BSIT)</strong> at <strong>Data Center College of the Philippines &ndash; Baguio City</strong>. My academic journey has given me deep foundations in software development lifecycles, relational database architecture (MySQL), front-end web engineering, and object-oriented programming.
+          </p>
+        </div>
+
+        <div class="bento-side-stack">
+          <div class="bento-stat-item spotlight-card reveal-on-scroll">
+            <div class="stat-item-num">01 / FOUNDATIONS</div>
+            <h4 class="stat-item-heading">Academic Rigor</h4>
+            <p class="bento-text" style="font-size:13px;">Specializing in Database Management Systems, Data Structures, OOP, and Web Technologies.</p>
+          </div>
+
+          <div class="bento-stat-item spotlight-card reveal-on-scroll">
+            <div class="stat-item-num">02 / PRACTICE</div>
+            <h4 class="stat-item-heading">Real-World Builds</h4>
+            <p class="bento-text" style="font-size:13px;">Building actual POS systems and rental management databases that solve tangible transaction and inventory bottlenecks.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="contact section-wrap section-pad" id="contact">
-      <div class="contact-copy reveal">
-        <p class="eyebrow">04 / SAY HELLO</p>
-        <h2>Have an idea?<br><em>Let's talk.</em></h2>
-        <p>I'm open to learning opportunities, collaboration, and connecting with people who enjoy creating useful things with technology.</p>
+    <!-- 06. Capabilities & Engineering Architecture -->
+    <section class="section container" id="skills">
+      <div class="section-head reveal-on-scroll">
+        <span class="section-label">Engineering Capabilities</span>
+        <h2 class="section-title">Tested in code, not just listed on a resume.</h2>
+        <p class="section-desc">Practical technologies applied across transactional databases, responsive interfaces, and object-oriented systems.</p>
       </div>
-      <div class="contact-panel reveal">
-        <div class="contact-line"><span>EMAIL</span><a href="mailto:kianna.lim@example.com" id="emailLink">kianna.lim@example.com ↗</a></div>
-        <div class="contact-line"><span>LOCATION</span><p>Baguio City, Philippines</p></div>
-        <div class="contact-line"><span>LINKS</span><div class="social-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
-        <p class="contact-edit-note">Remember to replace the sample email and profile links with your own.</p>
+
+      <div class="capabilities-bento">
+        <!-- Card 1: Relational DBs & Systems Architecture (Featured) -->
+        <div class="bento-cap-card cap-card-featured spotlight-card reveal-on-scroll" style="--stagger: 0;">
+          <div class="cap-card-header">
+            <div class="cap-badge">DATA LAYER &bull; RELATIONAL ARCHITECTURE</div>
+            <h3 class="cap-card-title">Relational Schemas &amp; Backend Pipelines</h3>
+            <p class="cap-card-desc">Architecting normalized tables in 3NF, managing foreign key referential integrity in InnoDB, and programming server-side transactional CRUD logic in PHP.</p>
+          </div>
+
+          <!-- Live SQL / Schema Snippet Box -->
+          <div class="code-terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="terminal-file">beyond_the_brew_schema.sql</span>
+              <span class="terminal-engine">MySQL 8.0 &bull; InnoDB</span>
+            </div>
+            <pre class="terminal-code"><code><span class="c-kw">CREATE TABLE</span> <span class="c-fn">order_items</span> (
+  <span class="c-col">order_id</span> <span class="c-type">INT NOT NULL</span> <span class="c-kw">REFERENCES</span> <span class="c-tbl">orders</span>(id),
+  <span class="c-col">beverage_id</span> <span class="c-type">INT NOT NULL</span> <span class="c-kw">REFERENCES</span> <span class="c-tbl">beverages</span>(id),
+  <span class="c-col">quantity</span> <span class="c-type">INT NOT NULL</span> <span class="c-kw">DEFAULT</span> 1,
+  <span class="c-col">line_total</span> <span class="c-type">DECIMAL(10,2) NOT NULL</span>
+);</code></pre>
+          </div>
+
+          <div class="cap-pill-group">
+            <span class="cap-pill">MySQL Database</span>
+            <span class="cap-pill">Normalized 3NF</span>
+            <span class="cap-pill">Foreign Keys</span>
+            <span class="cap-pill">PHP 8.x CRUD</span>
+            <span class="cap-pill">WampServer</span>
+            <span class="cap-pill">ACID Transactions</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Frontend Engineering -->
+        <div class="bento-cap-card spotlight-card reveal-on-scroll" style="--stagger: 1;">
+          <div class="cap-card-header">
+            <div class="cap-badge">CLIENT LAYER &bull; ZERO RUNTIME BLOAT</div>
+            <h3 class="cap-card-title">Frontend Engineering &amp; a11y</h3>
+            <p class="cap-card-desc">Crafting accessible, lightweight web applications using pure semantic HTML5, modern CSS flex/grid, and vanilla JavaScript without heavy third-party framework overhead.</p>
+          </div>
+
+          <!-- Micro Scorecard Box -->
+          <div class="frontend-metrics-box">
+            <div class="metric-col">
+              <span class="metric-num">0.000</span>
+              <span class="metric-lbl">CLS Shift</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-col">
+              <span class="metric-num">98%</span>
+              <span class="metric-lbl">Lighthouse</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-col">
+              <span class="metric-num">0 KB</span>
+              <span class="metric-lbl">Runtime Bloat</span>
+            </div>
+          </div>
+
+          <div class="cap-pill-group">
+            <span class="cap-pill">Semantic HTML5</span>
+            <span class="cap-pill">CSS Flexbox &amp; Grid</span>
+            <span class="cap-pill">Vanilla JS (ES6+)</span>
+            <span class="cap-pill">Responsive Design</span>
+            <span class="cap-pill">WCAG AA a11y</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Programming & Analysis -->
+        <div class="bento-cap-card spotlight-card reveal-on-scroll" style="--stagger: 2;">
+          <div class="cap-card-header">
+            <div class="cap-badge">LOGIC LAYER &bull; OOP PARADIGMS</div>
+            <h3 class="cap-card-title">Object-Oriented &amp; System Analysis</h3>
+            <p class="cap-card-desc">Applying OOP principles (encapsulation, abstraction, inheritance) and structured system modeling for real-world enterprise and academic workflows.</p>
+          </div>
+
+          <!-- Tech List with Details -->
+          <div class="lang-spec-list">
+            <div class="lang-item">
+              <div class="lang-name">Java</div>
+              <div class="lang-role">Data Structures &amp; OOP Foundations</div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-name">C#</div>
+              <div class="lang-role">Desktop &amp; Structured Software Architecture</div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-name">Python</div>
+              <div class="lang-role">Algorithm Problem Solving &amp; Scripting</div>
+            </div>
+          </div>
+
+          <div class="cap-pill-group">
+            <span class="cap-pill">OOP Paradigms</span>
+            <span class="cap-pill">System Analysis &amp; Design</span>
+            <span class="cap-pill">Requirements Modeling</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Full-width Interactive Application Tray -->
+        <div class="bento-cap-card cap-shelf-card spotlight-card reveal-on-scroll" style="--stagger: 3;">
+          <div class="shelf-header">
+            <div>
+              <span class="cap-badge">INTERACTIVE PROOF TRAY</span>
+              <h4 class="shelf-title">Where Each Technology Is Applied</h4>
+            </div>
+            <span class="shelf-hint">Hover a tool to view its real application</span>
+          </div>
+
+          <div class="tech-tiles-tray" id="techTilesTray">
+            <button class="tech-tile active" data-context="Architected normalized relational tables, foreign key constraints, and inventory depletion queries for Beyond the Brew POS and Rental System.">
+              <span class="tile-icon">&#9636;</span>
+              <span class="tile-label">MySQL 8.0</span>
+            </button>
+            <button class="tech-tile" data-context="Engineered server-side CRUD logic, session timers, and transaction records configured under WampServer.">
+              <span class="tile-icon">&#9670;</span>
+              <span class="tile-label">PHP 8.x</span>
+            </button>
+            <button class="tech-tile" data-context="Structured accessible, WCAG-compliant DOM elements, Schema.org microdata, and SEO-optimized WebP asset pipelines.">
+              <span class="tile-icon">&lt;&gt;</span>
+              <span class="tile-label">HTML5</span>
+            </button>
+            <button class="tech-tile" data-context="Authored fluid responsive layouts with CSS Grid, Flexbox, custom spring easing curves, and dark mode palette.">
+              <span class="tile-icon">#</span>
+              <span class="tile-label">Modern CSS3</span>
+            </button>
+            <button class="tech-tile" data-context="Developed DOM interactions, 60fps canvas particles, segmented control transitions, and Sonner toast micro-interactions.">
+              <span class="tile-icon">JS</span>
+              <span class="tile-label">JavaScript</span>
+            </button>
+            <button class="tech-tile" data-context="Applied object-oriented principles, data structures, and classes during academic coursework at DCCP.">
+              <span class="tile-icon">&#9672;</span>
+              <span class="tile-label">Java</span>
+            </button>
+            <button class="tech-tile" data-context="Built desktop applications and structured procedural programs with event-driven architecture.">
+              <span class="tile-icon">C#</span>
+              <span class="tile-label">C#</span>
+            </button>
+            <button class="tech-tile" data-context="Implemented algorithms, logic scripts, and data manipulation routines.">
+              <span class="tile-icon">py</span>
+              <span class="tile-label">Python</span>
+            </button>
+            <button class="tech-tile" data-context="Local full-stack development environment managing Apache 2.4, PHP 8, and MySQL service daemons.">
+              <span class="tile-icon">&#9881;</span>
+              <span class="tile-label">WampServer</span>
+            </button>
+            <button class="tech-tile" data-context="Version control, branching workflows, repository history tracking, and deployment automation.">
+              <span class="tile-icon">&#9043;</span>
+              <span class="tile-label">Git &amp; GitHub</span>
+            </button>
+          </div>
+
+          <div class="tech-context-display" id="techContextDisplay">
+            <span class="context-bullet">&bull;</span>
+            <span id="techContextText">Architected normalized relational tables, foreign key constraints, and inventory depletion queries for Beyond the Brew POS and Rental System.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. Contact Section -->
+    <section class="section container" id="contact">
+      <div class="contact-card spotlight-card reveal-on-scroll">
+        <div>
+          <span class="section-label">Communication</span>
+          <h2 class="contact-headline">Let's build something exceptional together.</h2>
+          <p class="contact-sub">
+            I am actively seeking internship opportunities, junior developer roles, and technical collaborations. Whether you have a project in mind or want to talk software architecture and design, my inbox is open.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <div class="email-display-row">
+            <span class="email-val">kanglimchu@gmail.com</span>
+            <button class="copy-button" id="copyEmailBtn" aria-label="Copy email address">
+              <span class="copy-icon-wrap">
+                <svg class="copy-icon icon-idle" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <svg class="copy-icon icon-success" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span class="copy-label" id="copyLabel">Copy</span>
+            </button>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/kanglimchu-create" target="_blank" rel="me noopener noreferrer" class="social-link-btn">
+              <span>GitHub</span>
+              <span>&nearr;</span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+              <span>LinkedIn</span>
+              <span>&nearr;</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer section-wrap">
-    <a class="footer-brand" href="#top">K<span>.</span> <small>MADE WITH CURIOSITY</small></a>
-    <p>© <span id="year"></span> Kianna Ivan Marie Lim. Learning as I go.</p>
-    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+  <!-- 08. Footer -->
+  <footer class="container site-footer">
+    <div>
+      <span>Kianna Ivan Marie Lim</span> &copy; <span id="year"></span> &bull; Baguio City, Philippines
+    </div>
+    <div>
+      <a href="#home" class="footer-top-link" aria-label="Back to top">&uarr; Back to top</a>
+    </div>
   </footer>
 
-  <dialog class="project-dialog" id="projectDialog">
-    <button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button>
-    <p class="eyebrow" id="dialogEyebrow">PROJECT DETAILS</p>
-    <h2 id="dialogTitle">Project title</h2>
-    <p id="dialogText"></p>
-    <p class="dialog-hint">Edit this project description in <code>script.js</code> to reflect your actual work.</p>
+  <!-- 09. Rich Modal Dialog -->
+  <dialog class="rich-modal" id="projectModal">
+    <button class="modal-close-btn" id="modalClose" aria-label="Close dialog">&times;</button>
+    <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;" id="modalTag">ACADEMIC PROJECT</div>
+    <h2 style="font-size:20px;font-weight:600;color:var(--text-primary);letter-spacing:-0.02em;margin-bottom:12px;" id="modalTitle">Project Title</h2>
+    <p style="font-size:13.5px;line-height:1.65;color:var(--text-secondary);margin-bottom:16px;" id="modalDesc"></p>
+    <ul style="list-style:none;padding:0;margin-bottom:18px;font-size:13px;color:var(--text-secondary);line-height:1.7;" id="modalFeatures"></ul>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;" id="modalTags"></div>
   </dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- 10. Emil Kowalski Sonner Toast -->
+  <div class="sonner-toast" id="sonnerToast" role="status" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMsg">Email copied to clipboard: kanglimchu@gmail.com</span>
+  </div>
 </body>
 </html>

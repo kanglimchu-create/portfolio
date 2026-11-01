@@ -1,4 +1,26 @@
+# Robots.txt for Kianna Lim Portfolio
+# https://kanglimchu.netlify.app/
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Allow: /images/
+Allow: /style.css
+Allow: /script.js
+Allow: /favicon.svg
+
+# AI Search Crawlers (Search citability)
+User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://portfolioshit.netlify.app/sitemap.xml
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Sitemaps & AI Context
+Sitemap: https://kanglimchu.netlify.app/sitemap.xml

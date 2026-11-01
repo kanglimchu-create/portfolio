@@ -1,0 +1,27 @@
+# Kianna Lim - Information Technology Student & Web Developer Portfolio
+
+> Official portfolio of Kianna Ivan Marie Lim, a Bachelor of Science in Information Technology (BSIT) student at Data Center College of the Philippines in Baguio City. Specializing in front-end web development, responsive user interface design, database systems (MySQL, PHP), and software programming (HTML, CSS, JavaScript, Java, C#, Python).
+
+## Core Links
+
+- [Portfolio Homepage](https://kanglimchu.netlify.app/): Main portfolio site featuring interactive project showcases, technical skills, and background.
+- [GitHub Profile](https://github.com/kanglimchu-create): Source code repositories, academic assignments, and personal web projects.
+
+## Featured Projects
+
+- [Beyond the Brew POS & MIS](https://kanglimchu.netlify.app/#projects): Coffee shop Point of Sale and Management Information System designed for transaction organization and inventory management.
+- [Computer Rental & Sales System](https://kanglimchu.netlify.app/#projects): Relational database-backed tracking application developed with PHP, MySQL, and WampServer.
+- [Personal Portfolio Website](https://kanglimchu.netlify.app/#projects): Fast, responsive, accessible portfolio site built with semantic HTML5, modern CSS3 animations, and vanilla JavaScript.
+
+## Technical Skills
+
+- **Front-End Development**: HTML5, CSS3 (Flexbox, Grid, CSS Variables), JavaScript (ES6+, DOM Manipulation, IntersectionObserver).
+- **Programming & Scripting**: Java, C#, Python, PHP.
+- **Databases & Systems**: MySQL, Relational Database Design, WampServer, System Analysis & Design.
+- **Design & UI**: Responsive Web Design, Visual Hierarchy, Usability & Accessibility.
+
+## Education & Location
+
+- **Institution**: Data Center College of the Philippines – Baguio City
+- **Degree**: Bachelor of Science in Information Technology (BSIT)
+- **Location**: Baguio City, Philippines
