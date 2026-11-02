@@ -55,8 +55,12 @@
     pill.addEventListener("click", () => {
       const filter = pill.dataset.filter;
 
-      filterPills.forEach((p) => p.classList.remove("active"));
+      filterPills.forEach((p) => {
+        p.classList.remove("active");
+        p.setAttribute("aria-pressed", "false");
+      });
       pill.classList.add("active");
+      pill.setAttribute("aria-pressed", "true");
 
       projectCards.forEach((card) => {
         const cat = card.dataset.category || "";
