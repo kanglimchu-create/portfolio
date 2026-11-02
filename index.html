@@ -35,10 +35,19 @@
   <meta name="twitter:description" content="Portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City.">
   <meta name="twitter:image" content="https://kanglimchu.netlify.app/images/og-image.jpg">
 
-  <!-- Typography: Pure Apple-grade Inter & JetBrains Mono -->
+  <!-- Preload high-priority hero image for instantaneous LCP -->
+  <link rel="preload" as="image" href="images/kianna-profile.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Typography: Pure Apple-grade Inter & JetBrains Mono with asynchronous non-blocking loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  </noscript>
+
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 
@@ -95,7 +104,7 @@
   <!-- Site Navigation Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="Kianna Lim">
+      <a class="brand" href="#home">
         <span class="brand-monogram" aria-hidden="true">K</span>
         <span class="brand-name">Kianna Lim</span>
       </a>
@@ -110,7 +119,7 @@
 
       <div class="header-actions">
         <!-- Theme Toggle: Light / Dark -->
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle between Light and Dark mode">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Dark mode (switch to light)">
           <span class="theme-icon" aria-hidden="true">&#9680;</span>
           <span class="theme-text" id="themeLabel">Dark</span>
         </button>
@@ -175,10 +184,10 @@
                 <source srcset="images/kianna-profile.webp" type="image/webp">
                 <source srcset="images/kianna-profile-opt.jpg" type="image/jpeg">
                 <img 
-                  src="images/kianna-profile-opt.jpg" 
+                  src="images/kianna-profile.webp" 
                   alt="Kianna Ivan Marie Lim - IT student and web developer in Baguio City" 
                   width="400" 
-                  height="480"
+                  height="533"
                   fetchpriority="high"
                   decoding="async"
                 >
