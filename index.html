@@ -22,10 +22,12 @@
   <meta property="og:title" content="Kianna Lim | IT Student &amp; Web Developer Portfolio">
   <meta property="og:description" content="Explore the IT portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Discover web projects, UI design, and database systems.">
   <meta property="og:url" content="https://kanglimchu.netlify.app/">
-  <meta property="og:image" content="https://kanglimchu.netlify.app/images/kianna-profile.jpg">
+  <meta property="og:image" content="https://kanglimchu.netlify.app/images/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://kanglimchu.netlify.app/images/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Kianna Ivan Marie Lim - Information Technology Student and Web Developer">
+  <meta property="og:image:alt" content="Kianna Ivan Marie Lim - IT Student &amp; Web Developer Portfolio">
   <meta property="og:locale" content="en_US">
   <meta property="profile:first_name" content="Kianna">
   <meta property="profile:last_name" content="Lim">
@@ -34,8 +36,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kianna Lim | IT Student &amp; Web Developer Portfolio">
   <meta name="twitter:description" content="Explore the IT portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Discover web projects, UI design, and database systems.">
-  <meta name="twitter:image" content="https://kanglimchu.netlify.app/images/kianna-profile.jpg">
-  <meta name="twitter:image:alt" content="Kianna Ivan Marie Lim - IT Portfolio">
+  <meta name="twitter:image" content="https://kanglimchu.netlify.app/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Kianna Ivan Marie Lim - IT Student &amp; Web Developer Portfolio">
 
   <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +132,7 @@
         },
         "sameAs": [
           "https://github.com/kanglimchu-create",
-          "https://www.linkedin.com/"
+          "https://github.com/kanglimchu-create/portfolio"
         ],
         "alumniOf": {
           "@type": "CollegeOrUniversity",
@@ -195,10 +197,12 @@
               "@type": "CreativeWork",
               "name": "Personal Portfolio Website",
               "description": "A responsive, accessible portfolio website built with HTML5, CSS3, and JavaScript showcasing projects, technical skills, and background.",
+              "url": "https://kanglimchu.netlify.app/#projects",
+              "sameAs": "https://github.com/kanglimchu-create/portfolio",
               "creator": {
                 "@id": "https://kanglimchu.netlify.app/#person"
               },
-              "keywords": ["HTML", "CSS", "JavaScript", "Web Development"]
+              "keywords": ["HTML", "CSS", "JavaScript", "Web Development", "Technical SEO"]
             }
           }
         ]
@@ -239,7 +243,7 @@
 
       <nav class="navigation" aria-label="Main Navigation">
         <a class="nav-link active" href="#home">Home</a>
-        <a class="nav-link" href="#work">Projects</a>
+        <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#skills">Skills</a>
         <a class="nav-link" href="#contact">Contact</a>
@@ -262,6 +266,7 @@
         </div>
 
         <h1 class="hero-headline animate-in delay-1">
+          <span class="hero-eyebrow">Kianna Ivan Marie Lim &bull; Web Developer &amp; IT Student</span>
           <span class="mask-line">Building thoughtful web interfaces &amp;</span>
           <span class="mask-line"><span class="hero-highlight">structured database systems.</span></span>
         </h1>
@@ -271,7 +276,7 @@
         </p>
 
         <div class="hero-actions animate-in delay-3">
-          <a class="btn-primary" href="#work">
+          <a class="btn-primary" href="#projects">
             <span>Explore Projects</span>
             <span>&darr;</span>
           </a>
@@ -333,7 +338,7 @@
     </div>
 
     <!-- 04. Projects Section -->
-    <section class="section container" id="work">
+    <section class="section container" id="projects">
       <div class="section-head reveal-on-scroll">
         <span class="section-label">Selected Work</span>
         <h2 class="section-title">Engineered with precision and purpose.</h2>
@@ -378,7 +383,7 @@
                 <span class="tag-badge">MySQL Schema</span>
                 <span class="tag-badge">System Analysis</span>
               </div>
-              <div class="card-action-arrow">&nearr;</div>
+              <a href="https://github.com/kanglimchu-create" target="_blank" rel="noopener noreferrer" class="card-action-arrow" title="View details on GitHub" aria-label="Beyond the Brew details on GitHub">&nearr;</a>
             </div>
           </div>
         </article>
@@ -414,7 +419,7 @@
                 <span class="tag-badge">MySQL</span>
                 <span class="tag-badge">WampServer</span>
               </div>
-              <div class="card-action-arrow">&nearr;</div>
+              <a href="https://github.com/kanglimchu-create" target="_blank" rel="noopener noreferrer" class="card-action-arrow" title="View details on GitHub" aria-label="Computer Rental details on GitHub">&nearr;</a>
             </div>
           </div>
         </article>
@@ -447,7 +452,7 @@
                 <span class="tag-badge">CSS3</span>
                 <span class="tag-badge">Vanilla JS</span>
               </div>
-              <div class="card-action-arrow">&nearr;</div>
+              <a href="https://github.com/kanglimchu-create/portfolio" target="_blank" rel="noopener noreferrer" class="card-action-arrow" title="View portfolio repository on GitHub" aria-label="Personal Portfolio repository on GitHub">&nearr;</a>
             </div>
           </div>
         </article>
@@ -688,12 +693,12 @@
           </div>
 
           <div class="social-links">
-            <a href="https://github.com/kanglimchu-create" target="_blank" rel="me noopener noreferrer" class="social-link-btn">
+            <a href="https://github.com/kanglimchu-create" target="_blank" rel="me noopener noreferrer" class="social-link-btn" title="GitHub Profile">
               <span>GitHub</span>
               <span>&nearr;</span>
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link-btn">
-              <span>LinkedIn</span>
+            <a href="https://github.com/kanglimchu-create/portfolio" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="Portfolio Source Code">
+              <span>Portfolio Repo</span>
               <span>&nearr;</span>
             </a>
           </div>
@@ -719,7 +724,13 @@
     <h2 style="font-size:20px;font-weight:600;color:var(--text-primary);letter-spacing:-0.02em;margin-bottom:12px;" id="modalTitle">Project Title</h2>
     <p style="font-size:13.5px;line-height:1.65;color:var(--text-secondary);margin-bottom:16px;" id="modalDesc"></p>
     <ul style="list-style:none;padding:0;margin-bottom:18px;font-size:13px;color:var(--text-secondary);line-height:1.7;" id="modalFeatures"></ul>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;" id="modalTags"></div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;" id="modalTags"></div>
+    <div id="modalActionWrap" style="padding-top:14px;border-top:1px solid var(--border);">
+      <a id="modalRepoLink" href="https://github.com/kanglimchu-create/portfolio" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:7px 14px;text-decoration:none;">
+        <span id="modalRepoLabel">View on GitHub</span>
+        <span>&nearr;</span>
+      </a>
+    </div>
   </dialog>
 
   <!-- 10. Emil Kowalski Sonner Toast -->
