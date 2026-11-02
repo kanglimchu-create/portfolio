@@ -442,7 +442,7 @@ button {
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: var(--bg-canvas-subtle);
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
 }
 
 .portrait-frame img {

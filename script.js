@@ -25,6 +25,9 @@
     if (themeLabel) {
       themeLabel.textContent = theme === "light" ? "Light" : "Dark";
     }
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-label", theme === "light" ? "Light mode (switch to dark)" : "Dark mode (switch to light)");
+    }
   }
 
   const savedTheme = localStorage.getItem("kiml_theme");
