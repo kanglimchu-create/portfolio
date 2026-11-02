@@ -95,8 +95,8 @@
   <!-- Site Navigation Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="Kianna Lim home">
-        <span class="brand-monogram">K</span>
+      <a class="brand" href="#home" aria-label="Kianna Lim">
+        <span class="brand-monogram" aria-hidden="true">K</span>
         <span class="brand-name">Kianna Lim</span>
       </a>
 
@@ -204,11 +204,11 @@
         <p class="section-sub">A curated selection of point-of-sale systems, database applications, and web builds.</p>
 
         <!-- Category Filters -->
-        <div class="filter-bar" role="tablist" aria-label="Filter projects">
-          <button class="filter-pill active" data-filter="all">All [3]</button>
-          <button class="filter-pill" data-filter="systems">Systems &amp; POS</button>
-          <button class="filter-pill" data-filter="databases">Databases &amp; PHP</button>
-          <button class="filter-pill" data-filter="web">Web Craft</button>
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-pill active" type="button" aria-pressed="true" data-filter="all">All [3]</button>
+          <button class="filter-pill" type="button" aria-pressed="false" data-filter="systems">Systems &amp; POS</button>
+          <button class="filter-pill" type="button" aria-pressed="false" data-filter="databases">Databases &amp; PHP</button>
+          <button class="filter-pill" type="button" aria-pressed="false" data-filter="web">Web Craft</button>
         </div>
       </div>
 
