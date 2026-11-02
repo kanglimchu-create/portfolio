@@ -216,7 +216,9 @@ const projectData = {
       "Automated stock depletion tracking and low-inventory threshold triggers",
       "Comprehensive end-of-day sales auditing and transaction reconciliation reports"
     ],
-    tags: ["POS Architecture", "System Analysis", "MySQL Relational Schema", "UI/UX Flow"]
+    tags: ["POS Architecture", "System Analysis", "MySQL Relational Schema", "UI/UX Flow"],
+    repoUrl: "https://github.com/kanglimchu-create",
+    repoLabel: "Explore Developer GitHub ↗"
   },
   rental: {
     category: "Database Application",
@@ -228,7 +230,9 @@ const projectData = {
       "CRUD operations for terminal availability, hardware inventory, and customer records",
       "Configured and verified under Apache, PHP 8, and MySQL via WampServer"
     ],
-    tags: ["PHP 8.x", "MySQL Relational Design", "WampServer", "CRUD Architecture"]
+    tags: ["PHP 8.x", "MySQL Relational Design", "WampServer", "CRUD Architecture"],
+    repoUrl: "https://github.com/kanglimchu-create",
+    repoLabel: "Explore Developer GitHub ↗"
   },
   portfolio: {
     category: "Web Engineering",
@@ -240,7 +244,9 @@ const projectData = {
       "Tactile Emil Kowalski inspired micro-interactions and Sonner toast notification",
       "Fully responsive mobile dock navigation with active scroll observation"
     ],
-    tags: ["HTML5", "Modern CSS", "Vanilla JavaScript", "Technical SEO"]
+    tags: ["HTML5", "Modern CSS", "Vanilla JavaScript", "Technical SEO"],
+    repoUrl: "https://github.com/kanglimchu-create/portfolio",
+    repoLabel: "View Portfolio Repository on GitHub ↗"
   }
 };
 
@@ -251,6 +257,8 @@ const modalDesc = $("#modalDesc");
 const modalFeatures = $("#modalFeatures");
 const modalTags = $("#modalTags");
 const modalClose = $("#modalClose");
+const modalRepoLink = $("#modalRepoLink");
+const modalRepoLabel = $("#modalRepoLabel");
 
 function closeModal() {
   if (!modal) return;
@@ -264,7 +272,8 @@ function closeModal() {
 }
 
 $$("[data-project]").forEach((card) => {
-  card.addEventListener("click", () => {
+  card.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return;
     const key = card.dataset.project;
     const data = projectData[key];
     if (!data) return;
@@ -281,6 +290,11 @@ $$("[data-project]").forEach((card) => {
     if (modalTags && data.tags) {
       modalTags.innerHTML = data.tags.map((t) => `<span class="tag-badge">${t}</span>`).join("");
       modalTags.style.display = "flex";
+    }
+
+    if (modalRepoLink && data.repoUrl) {
+      modalRepoLink.href = data.repoUrl;
+      if (modalRepoLabel) modalRepoLabel.textContent = data.repoLabel || "View on GitHub";
     }
 
     if (modal && typeof modal.showModal === "function") {

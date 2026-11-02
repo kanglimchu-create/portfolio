@@ -411,6 +411,17 @@ body {
 }
 
 /* Headline — Restrained, Tasteful, Tight Tracking */
+.hero-eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
 .hero-headline {
   font-size: clamp(28px, 3.6vw, 42px);
   font-weight: 600;
@@ -937,6 +948,8 @@ body {
   justify-content: center;
   color: var(--text-secondary);
   font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
   transition: transform 160ms var(--ease-spring), background-color 150ms ease, color 150ms ease;
 }
 

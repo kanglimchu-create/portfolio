@@ -6,12 +6,13 @@
 
 - [Portfolio Homepage](https://kanglimchu.netlify.app/): Main portfolio site featuring interactive project showcases, technical skills, and background.
 - [GitHub Profile](https://github.com/kanglimchu-create): Source code repositories, academic assignments, and personal web projects.
+- [Portfolio Source Code](https://github.com/kanglimchu-create/portfolio): Open-source repository for Kianna's personal portfolio website.
 
 ## Featured Projects
 
 - [Beyond the Brew POS & MIS](https://kanglimchu.netlify.app/#projects): Coffee shop Point of Sale and Management Information System designed for transaction organization and inventory management.
 - [Computer Rental & Sales System](https://kanglimchu.netlify.app/#projects): Relational database-backed tracking application developed with PHP, MySQL, and WampServer.
-- [Personal Portfolio Website](https://kanglimchu.netlify.app/#projects): Fast, responsive, accessible portfolio site built with semantic HTML5, modern CSS3 animations, and vanilla JavaScript.
+- [Personal Portfolio Website](https://github.com/kanglimchu-create/portfolio): Fast, responsive, accessible portfolio site built with semantic HTML5, modern CSS3 animations, and vanilla JavaScript. Live at [kanglimchu.netlify.app](https://kanglimchu.netlify.app/).
 
 ## Technical Skills
 
