@@ -4,7 +4,7 @@
 
 ## Core Links
 
-- [Portfolio Homepage](https://kanglimchu.netlify.app/): Aesthetic minimalist portfolio featuring curated works, interactive tools, and sensory controls.
+- [Portfolio Homepage](https://kanglimchu.netlify.app/): Card-inspired portfolio featuring curated works, three colourways, and tactile micro-interactions.
 - [GitHub Profile](https://github.com/kanglimchu-create): Source code repositories, database systems, and academic projects.
 - [Portfolio Source Code](https://github.com/kanglimchu-create/portfolio): Open-source repository for Kianna's personal portfolio website.
 
@@ -12,11 +12,11 @@
 
 - [Beyond the Brew POS & MIS](https://kanglimchu.netlify.app/#work): Point of Sale and Management Information System designed with normalized MySQL relational schemas and real-time recipe inventory deduction.
 - [Computer Rental & Sales System](https://kanglimchu.netlify.app/#work): Relational database-backed terminal tracking and rental application developed with PHP 8, MySQL, and WampServer.
-- [Personal Portfolio Website](https://github.com/kanglimchu-create/portfolio): Fast, responsive, accessible portfolio site built with semantic HTML5, modern CSS, vanilla JavaScript, and Web Audio micro-interactions. Live at [kanglimchu.netlify.app](https://kanglimchu.netlify.app/).
+- [Personal Portfolio Website](https://github.com/kanglimchu-create/portfolio): Fast, responsive, accessible portfolio site built with semantic HTML5, modern CSS, and vanilla JavaScript. Live at [kanglimchu.netlify.app](https://kanglimchu.netlify.app/).
 
 ## Technical Skills
 
-- **Front-End Development**: HTML5, CSS3 (Flexbox, Grid, custom properties), Vanilla JavaScript (ES6+, DOM manipulation, IntersectionObserver, Web Audio API).
+- **Front-End Development**: HTML5, CSS3 (Flexbox, Grid, custom properties), Vanilla JavaScript (ES6+, DOM manipulation, IntersectionObserver, pointer/tilt effects).
 - **Databases & Backend**: MySQL 8.0, 3NF Normalization, PHP 8.x, WampServer, CRUD operations.
 - **Programming & Scripting**: Java, C#, Python.
 - **Methodologies**: System Analysis and Design, responsive design, WCAG 2.1 AA accessibility.

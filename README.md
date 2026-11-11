@@ -1,28 +1,37 @@
 # Kianna Ivan Marie Lim — Portfolio
 
-> A minimalist, aesthetic web developer portfolio built with zero framework overhead, refined editorial typography, and tactile sensory micro-interactions.
+> A cinematic, card-inspired web developer portfolio built with zero framework overhead — enchanted-card art direction, editorial serif typography, and tactile micro-interactions.
 
 Live at: [https://kanglimchu.netlify.app/](https://kanglimchu.netlify.app/)
 
 ---
 
-## ✦ Aesthetic Minimalist Design
+## ✦ The "Skymage" Aesthetic
 
-- **Apple-Inspired Clean Typography**:
-  - Engineered with **Inter** and Apple's native **SF Pro** display/text stack (`-apple-system`, `BlinkMacSystemFont`).
-  - Tight tracking (`-0.03em`), bold headlines, and clean, high-legibility hierarchy.
-  - Micro-metadata and timestamps in **JetBrains Mono**.
-- **Tactile Sensory Micro-Interactions (Auditorial)**:
-  - Native **Web Audio API** micro-clicks for buttons and tabs (completely synthesized client-side, zero audio assets, toggleable `Sound: Off / On`).
-  - **Dual Aesthetic Palette**: Seamlessly switch between **Paper** (warm gallery linen `#faf8f5`) and **Ink** (velvety obsidian `#0e0e11`).
-- **Visual Project Stages**:
-  - Interactive window preview stages for *Beyond the Brew POS*, *Computer Rental System*, and the *Portfolio Scorecard*.
-  - Fast, concise copy with zero text walls.
-  - Native `<dialog>` modal for in-depth inspection.
+Two complete interface personalities, switchable live from the header and remembered in `localStorage`:
+
+### 1 · Skymage — enchanted cardistry (default)
+
+- **Aeris-inspired art direction** — a deep navy void, cyan rim light, hairline etched frames, and four-point star motifs. Every motif is original CSS/SVG; no third-party game assets are used.
+- **Three collectible colourways** — **Azure**, **Rose**, and **Amethyst** — driven by CSS custom properties.
+- **Player-card hero** with cursor-tracked foil, subtle parallax tilt, and a slow floating stage.
+- **Cardistry interactions**: dealt-in section reveals, a re-dealing project filter, pointer-tracked sheen and 3D tilt on project cards, engraved plaques, and a cursor star-dust trail.
+
+### 2 · Minimal — quiet editorial
+
+- **Paper-white canvas**, single blue accent, hairline rules, and pure Inter typography (Bodoni is dropped entirely).
+- **No arcana**: no nebula, no grain, no glow, no tilt, no dust — the portrait becomes a plain captioned frame and motion reduces to opacity fades.
+- **Editorial section indices** (01 – 04) and generous whitespace replace the arcane furniture.
+
+### Shared
+
+- **Typography**: **Bodoni Moda** display, **Inter** body, **JetBrains Mono** metadata (Minimal mode drops the display face).
+- **Motion safety**: honours `prefers-reduced-motion`; all effects are CSS transforms plus a small vanilla JS layer.
 - **Performance & Standards**:
   - 0 KB external framework runtime (pure semantic HTML5, CSS3, and vanilla JS).
-  - 98+ Lighthouse scores across all metrics.
+  - Lighthouse **100 / 100 / 100** (Accessibility, Best Practices, SEO) in both modes.
   - Full Schema.org JSON-LD structured data graph.
+  - WCAG AA contrast in both skins, visible focus states, and keyboard-operable controls.
 
 ---
 
@@ -33,7 +42,7 @@ Live at: [https://kanglimchu.netlify.app/](https://kanglimchu.netlify.app/)
 2. **Computer Rental & Sales Management System**
    - Database application managing workstation session timers, peripheral inventory, and customer sales via PHP 8 & MySQL on WampServer.
 3. **Personal Portfolio Website**
-   - High-performance, accessible portfolio built with modern CSS custom properties, responsive design, and Web Audio API interactions.
+   - High-performance, accessible portfolio built with modern CSS custom properties, three selectable colourways, responsive design, and native card-tilt interactions.
 
 ---
 

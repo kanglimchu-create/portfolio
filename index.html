@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-variant="azure" data-mode="skymage">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#05081a">
   <title>Kianna Lim &bull; IT Student &amp; Web Developer</title>
   <meta name="description" content="Portfolio of Kianna Ivan Marie Lim, BSIT student and web developer in Baguio City. Crafting clean web interfaces and structured database systems.">
   <meta name="keywords" content="Kianna Lim, Kianna Ivan Marie Lim, IT portfolio, Baguio City web developer, front-end developer, PHP MySQL developer, Data Center College of the Philippines">
@@ -41,10 +41,10 @@
   <!-- Typography: Pure Apple-grade Inter & JetBrains Mono with asynchronous non-blocking loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
   </noscript>
 
   <link rel="preload" href="style.css" as="style">
@@ -105,7 +105,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">
-        <span class="brand-monogram" aria-hidden="true">K</span>
+        <span class="brand-mark" aria-hidden="true"><span>K</span></span>
         <span class="brand-name">Kianna Lim</span>
       </a>
 
@@ -118,11 +118,24 @@
       </nav>
 
       <div class="header-actions">
-        <!-- Theme Toggle: Light / Dark -->
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Dark mode (switch to light)">
-          <span class="theme-icon" aria-hidden="true">&#9680;</span>
-          <span class="theme-text" id="themeLabel">Dark</span>
-        </button>
+        <!-- Interface mode: quiet editorial vs. enchanted cardistry -->
+        <div class="mode-switch" role="group" aria-label="Interface mode">
+          <button class="mode-btn" type="button" data-mode="minimal" aria-pressed="false">Minimal</button>
+          <button class="mode-btn is-active" type="button" data-mode="skymage" aria-pressed="true">Skymage</button>
+        </div>
+
+        <!-- Colorway switcher: Azure / Rose / Amethyst (Skymage only) -->
+        <div class="variant-switcher" id="variantSwitcher" role="group" aria-label="Colour variant">
+          <button class="variant-gem active" type="button" data-variant="azure" aria-pressed="true" aria-label="Azure variant" title="Azure">
+            <span class="gem" aria-hidden="true"></span>
+          </button>
+          <button class="variant-gem" type="button" data-variant="rose" aria-pressed="false" aria-label="Rose variant" title="Rose">
+            <span class="gem" aria-hidden="true"></span>
+          </button>
+          <button class="variant-gem" type="button" data-variant="amethyst" aria-pressed="false" aria-label="Amethyst variant" title="Amethyst">
+            <span class="gem" aria-hidden="true"></span>
+          </button>
+        </div>
 
         <a class="header-cta" href="#contact">
           <span>Get in touch</span>
@@ -137,13 +150,14 @@
     <section class="hero-section container" id="home">
       <div class="hero-grid">
         <div class="hero-text-col">
-          <div class="status-badge">
-            <span class="pulse-dot"></span>
-            <span>Available for internships &bull; 2026</span>
-          </div>
+          <p class="hero-kicker">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Open to internships &amp; junior roles &mdash; 2026</span>
+          </p>
 
           <h1 class="hero-title">
-            Building clean web interfaces and structured database systems.
+            <span class="hero-name">Kianna <em>Lim</em></span>
+            <span class="hero-role">Web Developer &amp; IT Student &middot; Baguio City</span>
           </h1>
 
           <p class="hero-subtitle">
@@ -161,45 +175,50 @@
             </a>
           </div>
 
-          <div class="hero-metrics">
-            <div class="metric-item">
-              <span class="metric-number">03</span>
-              <span class="metric-label">Featured Projects</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-number">BSIT</span>
-              <span class="metric-label">DCCP Baguio City</span>
-            </div>
-            <div class="metric-item">
-              <span class="metric-number">0 KB</span>
-              <span class="metric-label">Framework Bloat</span>
-            </div>
-          </div>
+          <p class="hero-foot">
+            <span class="foot-mark" aria-hidden="true">&#10022;</span>
+            <span>Vanilla HTML &middot; CSS &middot; JS &mdash; 0 KB framework runtime</span>
+          </p>
         </div>
 
         <div class="hero-visual-col">
-          <div class="portrait-card">
-            <div class="portrait-frame">
-              <picture>
-                <source srcset="images/kianna-profile.webp" type="image/webp">
-                <source srcset="images/kianna-profile-opt.jpg" type="image/jpeg">
-                <img 
-                  src="images/kianna-profile.webp" 
-                  alt="Kianna Ivan Marie Lim - IT student and web developer in Baguio City" 
-                  width="400" 
-                  height="533"
-                  fetchpriority="high"
-                  decoding="async"
-                >
-              </picture>
-            </div>
-            <div class="portrait-caption">
-              <div class="caption-info">
-                <span class="caption-name">Kianna Ivan Marie Lim</span>
-                <span class="caption-role">BSIT &bull; Web Developer</span>
+          <div class="card-stage">
+            <div class="card-aura" aria-hidden="true"></div>
+
+            <div class="player-card" id="playerCard" data-tilt data-tilt-max="9">
+              <div class="player-card-inner">
+                <picture>
+                  <source srcset="images/kianna-profile.webp" type="image/webp">
+                  <source srcset="images/kianna-profile-opt.jpg" type="image/jpeg">
+                  <img
+                    class="card-portrait"
+                    src="images/kianna-profile.webp"
+                    alt="Kianna Ivan Marie Lim - IT student and web developer in Baguio City"
+                    width="400"
+                    height="533"
+                    fetchpriority="high"
+                    decoding="async"
+                  >
+                </picture>
+
+                <div class="card-scrim" aria-hidden="true"></div>
+                <span class="card-frame" aria-hidden="true"></span>
+                <span class="corner-index corner-index--tl" aria-hidden="true">K<i>✦</i></span>
+                <span class="corner-index corner-index--br" aria-hidden="true">26<i>✦</i></span>
+
+                <div class="card-plate">
+                  <span class="plate-eyebrow">Player Card</span>
+                  <span class="plate-name">Kianna Ivan Marie Lim</span>
+                  <span class="plate-meta">BSIT · Web Developer · Baguio City</span>
+                </div>
+
+                <div class="card-sheen" aria-hidden="true"></div>
               </div>
-              <span class="caption-tag">Baguio City</span>
             </div>
+
+            <span class="stage-spark s1" aria-hidden="true">✦</span>
+            <span class="stage-spark s2" aria-hidden="true">✦</span>
+            <span class="stage-spark s3" aria-hidden="true">✦</span>
           </div>
         </div>
       </div>
@@ -223,7 +242,7 @@
 
       <div class="projects-grid">
         <!-- Project 01: Beyond the Brew -->
-        <article class="project-aesthetic-card" data-category="systems databases" data-project="pos">
+        <article class="project-aesthetic-card" data-category="systems databases" data-project="pos" data-tilt data-tilt-max="5">
           <div class="card-visual-stage">
             <div class="stage-window">
               <div class="window-bar">
@@ -263,7 +282,7 @@
         </article>
 
         <!-- Project 02: Computer Rental -->
-        <article class="project-aesthetic-card" data-category="databases web" data-project="rental">
+        <article class="project-aesthetic-card" data-category="databases web" data-project="rental" data-tilt data-tilt-max="5">
           <div class="card-visual-stage">
             <div class="stage-window">
               <div class="window-bar">
@@ -306,7 +325,7 @@
         </article>
 
         <!-- Project 03: Personal Portfolio -->
-        <article class="project-aesthetic-card" data-category="web" data-project="portfolio">
+        <article class="project-aesthetic-card" data-category="web" data-project="portfolio" data-tilt data-tilt-max="5">
           <div class="card-visual-stage">
             <div class="stage-window">
               <div class="window-bar">
@@ -329,7 +348,7 @@
             </div>
             <h3 class="card-title">Personal Portfolio Website</h3>
             <p class="card-desc">
-              A high-performance personal portfolio built with zero framework bloat. Engineered with semantic HTML5, modern CSS custom properties, and native Web Audio micro-interactions.
+              A high-performance personal portfolio built with zero framework bloat. Engineered with semantic HTML5, modern CSS custom properties, and a three-colourway card system.
             </p>
             <div class="card-tags">
               <span class="tag">HTML5</span>
@@ -399,7 +418,7 @@
       <div class="skills-grid">
         <div class="skill-category-card">
           <div class="cat-header">
-            <span class="cat-glyph">&lt;&gt;</span>
+            <span class="cat-glyph">✦</span>
             <h3 class="cat-title">Front-End Engineering</h3>
           </div>
           <p class="cat-desc">Crafting responsive, accessible interfaces with zero framework overhead.</p>
@@ -414,7 +433,7 @@
 
         <div class="skill-category-card">
           <div class="cat-header">
-            <span class="cat-glyph">&#9636;</span>
+            <span class="cat-glyph">◇</span>
             <h3 class="cat-title">Databases &amp; Backend</h3>
           </div>
           <p class="cat-desc">Structuring normalized schemas and transactional server procedures.</p>
@@ -429,7 +448,7 @@
 
         <div class="skill-category-card">
           <div class="cat-header">
-            <span class="cat-glyph">&#9672;</span>
+            <span class="cat-glyph">✧</span>
             <h3 class="cat-title">Core Programming &amp; Design</h3>
           </div>
           <p class="cat-desc">Foundational software concepts, data structures, and system design.</p>
@@ -510,6 +529,7 @@
       <span>Baguio City, Philippines</span>
     </div>
     <div class="footer-right">
+      <span class="footer-code" id="footerCode">// Skymage · Cardistry Edition</span>
       <a class="back-top" href="#home">&uarr; Back to top</a>
     </div>
   </footer>
